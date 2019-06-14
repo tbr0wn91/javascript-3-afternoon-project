@@ -51,7 +51,17 @@ var employees = [
 */
 
 //Code Here
-
+function employeeUpdater(){
+  let updatedEmployees = employees.filter(function(employee, index, array){
+    if(employee.firstName !== 'Theo'){
+      if(employee.firstName === 'Lorie'){
+        employee.department = 'HR'
+      }
+        return employee
+    } 
+  }) 
+  return updatedEmployees
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -69,7 +79,12 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+function removeDuplicates(){
+  let newAccidents = workplaceAccidents.filter(function(num, index){
+     return workplaceAccidents.indexOf(num) >= index;
 
+  }); return newAccidents;
+}; 
 
 
 ////////// PROBLEM 3 //////////
