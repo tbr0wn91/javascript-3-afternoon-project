@@ -76,7 +76,11 @@ function greaterThan10(obj){
 */
 
 //Code Here
-
+function double(obj){
+  for(let key in obj){
+    obj[key] = obj[key] * 2;
+  }return obj
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -90,7 +94,12 @@ function greaterThan10(obj){
 */
 
 //Code Here
-
+function secrets(obj){
+  let emptyStr = "";
+  for(let key in obj){
+    
+  }
+}
 
 
 /* 
